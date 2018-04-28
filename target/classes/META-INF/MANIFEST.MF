@@ -1,0 +1,73 @@
+Manifest-Version: 1.0
+Built-By: fancying
+Class-Path: lib/junit-4.12.jar lib/hamcrest-core-1.3.jar lib/mysql-con
+ nector-java-6.0.6.jar lib/elasticsearch-6.2.3.jar lib/elasticsearch-c
+ ore-6.2.3.jar lib/lucene-core-7.2.1.jar lib/lucene-analyzers-common-7
+ .2.1.jar lib/lucene-backward-codecs-7.2.1.jar lib/lucene-grouping-7.2
+ .1.jar lib/lucene-highlighter-7.2.1.jar lib/lucene-join-7.2.1.jar lib
+ /lucene-memory-7.2.1.jar lib/lucene-misc-7.2.1.jar lib/lucene-queries
+ -7.2.1.jar lib/lucene-queryparser-7.2.1.jar lib/lucene-sandbox-7.2.1.
+ jar lib/lucene-spatial-7.2.1.jar lib/lucene-spatial-extras-7.2.1.jar 
+ lib/lucene-spatial3d-7.2.1.jar lib/lucene-suggest-7.2.1.jar lib/secur
+ esm-1.2.jar lib/elasticsearch-cli-6.2.3.jar lib/jopt-simple-5.0.2.jar
+  lib/hppc-0.7.1.jar lib/joda-time-2.9.9.jar lib/snakeyaml-1.17.jar li
+ b/jackson-core-2.8.10.jar lib/jackson-dataformat-smile-2.8.10.jar lib
+ /jackson-dataformat-yaml-2.8.10.jar lib/jackson-dataformat-cbor-2.8.1
+ 0.jar lib/t-digest-3.0.jar lib/HdrHistogram-2.1.9.jar lib/log4j-api-2
+ .9.1.jar lib/jna-4.5.1.jar lib/transport-6.2.3.jar lib/transport-nett
+ y4-client-6.2.3.jar lib/netty-buffer-4.1.16.Final.jar lib/netty-codec
+ -4.1.16.Final.jar lib/netty-codec-http-4.1.16.Final.jar lib/netty-com
+ mon-4.1.16.Final.jar lib/netty-handler-4.1.16.Final.jar lib/netty-res
+ olver-4.1.16.Final.jar lib/netty-transport-4.1.16.Final.jar lib/spati
+ al4j-0.6.jar lib/jts-1.13.jar lib/log4j-core-2.9.1.jar lib/reindex-cl
+ ient-6.2.3.jar lib/elasticsearch-rest-client-6.2.3.jar lib/httpclient
+ -4.5.2.jar lib/httpcore-4.4.5.jar lib/httpasyncclient-4.1.2.jar lib/h
+ ttpcore-nio-4.4.5.jar lib/commons-codec-1.10.jar lib/lang-mustache-cl
+ ient-6.2.3.jar lib/compiler-0.9.3.jar lib/percolator-client-6.2.3.jar
+  lib/parent-join-client-6.2.3.jar lib/rank-eval-client-6.2.3.jar lib/
+ jackson-databind-2.8.7.jar lib/jackson-annotations-2.8.0.jar lib/log4
+ j-1.2.17.jar lib/spring-context-4.3.8.RELEASE.jar lib/spring-aop-4.3.
+ 8.RELEASE.jar lib/spring-beans-4.3.8.RELEASE.jar lib/spring-core-4.3.
+ 8.RELEASE.jar lib/commons-logging-1.2.jar lib/spring-expression-4.3.8
+ .RELEASE.jar lib/es_create_index-0.0.1-SNAPSHOT.jar lib/mybatis-3.4.1
+ .jar lib/mybatis-spring-1.2.2.jar lib/tika-app-1.13.jar lib/tika-pars
+ ers-1.13.jar lib/tika-core-1.13.jar lib/vorbis-java-tika-0.8.jar lib/
+ jackcess-2.1.3.jar lib/commons-lang-2.6.jar lib/jackcess-encrypt-2.1.
+ 1.jar lib/jmatio-1.0.jar lib/apache-mime4j-core-0.7.2.jar lib/apache-
+ mime4j-dom-0.7.2.jar lib/commons-compress-1.11.jar lib/xz-1.5.jar lib
+ /pdfbox-2.0.1.jar lib/fontbox-2.0.1.jar lib/pdfbox-tools-2.0.1.jar li
+ b/pdfbox-debugger-2.0.1.jar lib/jempbox-1.8.12.jar lib/bcmail-jdk15on
+ -1.54.jar lib/bcpkix-jdk15on-1.54.jar lib/bcprov-jdk15on-1.54.jar lib
+ /poi-3.15-beta1.jar lib/poi-scratchpad-3.15-beta1.jar lib/poi-ooxml-3
+ .15-beta1.jar lib/poi-ooxml-schemas-3.15-beta1.jar lib/xmlbeans-2.6.0
+ .jar lib/curvesapi-1.03.jar lib/tagsoup-1.2.1.jar lib/asm-5.0.4.jar l
+ ib/isoparser-1.1.18.jar lib/metadata-extractor-2.8.1.jar lib/boilerpi
+ pe-1.1.0.jar lib/rome-1.5.1.jar lib/rome-utils-1.5.1.jar lib/vorbis-j
+ ava-core-0.8.jar lib/juniversalchardet-1.0.3.jar lib/jhighlight-1.0.2
+ .jar lib/java-libpst-0.8.1.jar lib/junrar-0.7.jar lib/commons-vfs2-2.
+ 0.jar lib/maven-scm-api-1.4.jar lib/plexus-utils-1.5.6.jar lib/maven-
+ scm-provider-svnexe-1.4.jar lib/maven-scm-provider-svn-commons-1.4.ja
+ r lib/regexp-1.3.jar lib/cxf-rt-rs-client-3.0.3.jar lib/cxf-rt-transp
+ orts-http-3.0.3.jar lib/cxf-core-3.0.3.jar lib/woodstox-core-asl-4.4.
+ 1.jar lib/stax2-api-3.1.4.jar lib/xmlschema-core-2.1.0.jar lib/cxf-rt
+ -frontend-jaxrs-3.0.3.jar lib/javax.ws.rs-api-2.0.1.jar lib/javax.ann
+ otation-api-1.2.jar lib/opennlp-tools-1.5.3.jar lib/opennlp-maxent-3.
+ 0.3.jar lib/jwnl-1.3.3.jar lib/commons-exec-1.3.jar lib/json-simple-1
+ .1.1.jar lib/json-20140107.jar lib/gson-2.2.4.jar lib/netcdf4-4.5.5.j
+ ar lib/jcip-annotations-1.0.jar lib/jna-4.1.0.jar lib/grib-4.5.5.jar 
+ lib/protobuf-java-2.5.0.jar lib/jdom2-2.0.4.jar lib/jsoup-1.7.2.jar l
+ ib/jj2000-5.2.jar lib/bzip2-0.9.1.jar lib/cdm-4.5.5.jar lib/udunits-4
+ .5.5.jar lib/quartz-2.2.0.jar lib/c3p0-0.9.1.1.jar lib/ehcache-core-2
+ .6.2.jar lib/guava-17.0.jar lib/jcommander-1.35.jar lib/httpservices-
+ 4.5.5.jar lib/httpmime-4.2.6.jar lib/commons-csv-1.0.jar lib/sis-util
+ ity-0.6.jar lib/sis-netcdf-0.6.jar lib/sis-storage-0.6.jar lib/sis-re
+ ferencing-0.6.jar lib/sis-metadata-0.6.jar lib/geoapi-3.0.0.jar lib/j
+ sr-275-0.9.3.jar lib/tika-langdetect-1.13.jar lib/language-detector-0
+ .5.jar lib/jsonic-1.2.11.jar lib/annotations-12.0.jar lib/tika-serial
+ ization-1.13.jar lib/tika-xmp-1.13.jar lib/xmpcore-5.1.2.jar lib/tika
+ -batch-1.13.jar lib/commons-cli-1.3.1.jar lib/jul-to-slf4j-1.7.12.jar
+  lib/jcl-over-slf4j-1.7.12.jar lib/commons-io-2.4.jar
+Build-Jdk: 1.8.0_151
+Created-By: Maven Integration for Eclipse
+Main-Class: cn.edu.fudan.se.esIndexBuilder.Main
+
