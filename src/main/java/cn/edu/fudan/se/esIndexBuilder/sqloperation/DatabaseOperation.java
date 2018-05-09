@@ -90,16 +90,17 @@ public class DatabaseOperation {
 	// repository_java issue commits
 	public List<Map<String, Object>> queryAll(String tableName, int start, int once) {
 		String query = "";
-
+		
+		//choose repos which have starts more than 1000
 		if (tableName == "repository_java") {
-			query = "select id,repos_name, local_addr, stars,  owner_name, primaryLanguage, updated_at, license_name, description, languages FROM repository_java limit "
-					+ start + "," + once;
+			query = "select id,repos_name, local_addr, stars,  owner_name, primaryLanguage, updated_at, license_name, description, languages FROM repository_java where stars >= 1000 and repository_id <> -1";
 		} else if (tableName == "issue") {
+			
 			query = "select i.id, i.repository_id,title,repos_name, reporter, issue_index, i.created_at, closed_at,  body, state FROM issue as i join repository_java as r where i.repository_id = r.id limit "
 					+ start + "," + once;
+			//query = "select * from  issue limit "+ start + "," + once;
 		} else {
 			query = "SELECT * FROM commits limit " + start + "," + once;
-			;
 		}
 
 		System.out.println(query);

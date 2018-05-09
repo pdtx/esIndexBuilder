@@ -46,7 +46,7 @@ public class EsIndex {
 	 * @param index : database and  code
 	 * @param tableName
 	 */
-	public void addDocuments(List<Map<String, Object>> list, String index, String tableName) {
+	public void addDocuments(List<Map<String, Object>> list, String index, String type) {
 		// TODO Auto-generated method stub
 		try {
 			BulkRequestBuilder bulkRequest = client.prepareBulk();
@@ -56,7 +56,7 @@ public class EsIndex {
 					xb.field(key,map.get(key));
 				}
 				xb.endObject();
-				bulkRequest.add(client.prepareIndex(index, tableName).setSource(xb));
+				bulkRequest.add(client.prepareIndex(index,type).setSource(xb));
 			}
 			BulkResponse bulkResponse = bulkRequest.get();
 			if(bulkResponse.hasFailures()) {

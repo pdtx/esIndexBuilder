@@ -18,6 +18,8 @@ import org.elasticsearch.search.SearchHits;
 import org.elasticsearch.search.fetch.subphase.highlight.HighlightBuilder;
 import org.elasticsearch.search.fetch.subphase.highlight.HighlightField;
 import org.elasticsearch.search.sort.SortOrder;
+import org.junit.Test;
+
 
 
 /**
@@ -28,7 +30,7 @@ public class EsQuery {
 	 TransportClient client = null;
 	 
 	 String type[] = new String[] {
-		"repository","issue","commit"	 
+		"repository","issues","commits"	 
 	 };
 	
 	public EsQuery() {
@@ -131,6 +133,16 @@ public class EsQuery {
 		}
 		return list;
 	}
-
+	
+	@Test
+	public void test() {
+		EsQuery esQuery = new EsQuery();
+		List<Map<String, Object>> list =   esQuery.queryDocuments("repository", "java","CraftBukkit");
+		if (list != null) {
+			System.out.println("success");
+		}else {
+			System.out.println("failed");
+		}
+	}
 
 }

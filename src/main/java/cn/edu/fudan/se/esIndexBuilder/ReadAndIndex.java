@@ -23,7 +23,7 @@ public class ReadAndIndex {
 
 	private DatabaseOperation database = null;
 	private EsIndex es = null;
-	private final int once = 10000;
+	private final int once = 2000;
 
 	// private Analyzer analyzerCode = null;
 
@@ -42,9 +42,22 @@ public class ReadAndIndex {
 		List<Map<String, Object>> list = database.queryAll(tableName, 0, once);
 
 		while ((list != null) && (list.size() != 0)) {
-			es.addDocuments(list, "database", tableName);
-			num += once;
+			//es.addDocuments(list, "database", tableName);
+			
+			
+			if (tableName == "repository_java") {
+				es.addDocuments(list, "repository","java");
+				System.out.println(tableName +  "done ------");
+				break;
+			} else if (tableName == "issue") {
+				es.addDocuments(list, "issues","java");
+			} else {
+				es.addDocuments(list, "commits","java");
+			}
+			
+			num =num+ once;
 			list = database.queryAll(tableName, num, once);
+			//list=null;
 			System.out.println(tableName + "\t" + num + "------");
 		}
 	}
